@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Countdown</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/calculate.js" async></script>
@@ -11,8 +12,7 @@
 
 <div class="main">
     <h1><label for="to">Time difference</label></h1>
-    <input id="to" name="to" type="date" required>
-    <button class="start" onclick="calculate()">Calculate</button>
+    <input id="to" name="to" type="date" onchange="calculate()">
     <h3 class="output" id="out"></h3>
 </div>
 
